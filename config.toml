@@ -3,5 +3,29 @@ languageCode = "en-us"
 title = "Meine Hugo Seite"
 theme = "basis"
 
+
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "This is the blog section"
+    title = "blog section"
+    url = "/blog/"
+    weight = -110
+  [[menu.main]]
+    identifier = "kurs1"
+    name = "Name von Kurs1"
+    title = "kurs 1"
+    url = "/kurs1/"
+    weight = 10
+  [[menu.main]]
+    identifier = "kurs2"
+    name = "Name von Kurs2"
+    title = "kurs 2"
+    url = "/kurs2/"
+    weight = 20
+
+
+
 [params]
     about = "Hier kommt der Text über die Seite rein. Hier kommt noch was dazu."
