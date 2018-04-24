@@ -1,4 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Meine Hugo Seite"
 theme = "basis"
+
+[params]
+    about = "Hier kommt der Text über die Seite rein. Hier kommt noch was dazu."
