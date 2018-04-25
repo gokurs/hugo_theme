@@ -16,26 +16,9 @@
   </head>
   <body>
       <div class="container">
-          <header class="blog-header py-3">
-              <div class="row flex-nowrap justify-content-between align-items-center">
-                
-                <div class="col-4 text-center">
-                  <a class="blog-header-logo text-dark" href="#">{{ .Site.Title }}</a>
-                </div>
-                
-              </div>
-            </header>
-      
-            <div class="nav-scroller py-1 mb-2">
-              <nav class="nav d-flex justify-content-between">
-                {{ range .Site.Menus.main }}
-                <a class="p-2 text-muted" href="{{ .URL }}">{{ .Name }}</a>
-              
-                {{ end }}
-               
-             
-              </nav>
-            </div>
+          {{ partial "header.html" . }}
+          {{ partial "nav.html" . }}
+            
             <main role="main" class="container">
                 <div class="row">
                     <div class="col-md-8 blog-main">
@@ -45,8 +28,9 @@
                     {{ partial "sidebar" . }}
                 </div><!-- /.row -->
             </main><!-- /.container -->
-{{ partial "footer" . }}
+          {{ partial "footer" . }}
       </div>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
