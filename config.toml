@@ -3,7 +3,11 @@ languageCode = "en-us"
 title = "Meine Hugo Seite"
 theme = "basis"
 
-
+[taxonomies]
+  tag = "tags"
+  kurs = "kurse"
+  blume = "blumen"
+  spiel = "spiele"
 
 [menu]
   [[menu.main]]
